@@ -1,0 +1,26 @@
+Collection Framework : provides an architecture to store obejects and manipulate them
+
+Array:
+properties: -DS,-fixed size,-collection of same data type,-elements,-index starts from 0
+Disadvantages: -it has a fixed size , -You cannot add new elements
+Syntax: int[] arrayOne={50,2,12};
+therfore java developers ceated two things ArrayList(Sequential array of objects) and HashMap(It is a map of Collection of key-value pairs)
+we have boxed type data type (objects in java): Boolean,Character,Byte,Short,Integer,Long,Float
+
+ArrayList
+def: Class that  implements interface list
+ class ArrayList implements List{}
+
+Syntax:
+List<String> namesList = new ArrayList();// inn place of float it cann never be a primitive type data
+namesList.add("Sam");//pos 0
+namesList.add("Rahul");//pos 1
+//type of a dynamic arrray
+How to get element from the arraylist
+System.out.println (namesList.get (2));
+
+//For Each Syntax
+for(String name:namesList){}
+//it can  contain duplicate elements
+
+HAshMAp
