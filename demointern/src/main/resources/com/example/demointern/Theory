@@ -1,0 +1,11 @@
+Types of layouts for fxml: Pane,VBox,HBox,GridPane
+
+Pane: When Things are added on the right side default is to add  it to the left corner
+VBox: vertical box all items are aligned vertically down when added
+HBox: horizontal box all items are aligned horizontally to right
+Which of the following Container lays its children flexibly according to their absolute positioning? ->> Pane
+Which of the following Container lays out its children in a single vertical column? ->>Vbox
+
+Menu
+The first child element of a MenuBar is ___________ ---->Menu --->MenuItem
+
