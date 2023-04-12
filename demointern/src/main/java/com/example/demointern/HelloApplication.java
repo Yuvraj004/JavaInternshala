@@ -34,7 +34,7 @@ public class HelloApplication extends Application {
 		rootNode.getChildren().add(0,menuB);
 
 		Scene scene = new Scene(rootNode);
-		stage.setTitle("Hello!");
+		stage.setTitle("Temperature Convertor Tool");
 		stage.setScene(scene);
 		//stage.setResizable(false); -> to stop the dialog box having the option of expanding and contracting
 		//Start an application

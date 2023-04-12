@@ -2,10 +2,7 @@ package com.example.demointern;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.util.Objects;
@@ -60,13 +57,37 @@ public class HelloController implements Initializable {
 
 	private float convertToC() {
 		String inp =  temp.getText();
-		float tempF = Float.parseFloat(inp);
+		float tempF = 0f;
+		try{
+			tempF = Float.parseFloat(inp);
+
+		}
+		catch(Exception e){
+			warnUser();
+			return 0;
+		}
+
 		return ((tempF-32)*((float) 5 /9));
+	}
+
+	private void warnUser() {
+		Alert alert = new Alert(Alert.AlertType.ERROR);
+		alert.setTitle("Error");
+		alert.setHeaderText("Invalid Temperature Entered");
+		alert.setContentText("Enter a valid temperature");
+		alert.show();
 	}
 
 	private float convertToF() {
 		String inp2 =  temp.getText();
-		float tempC = Float.parseFloat(inp2);
+		float tempC=0.0f;
+		try{
+			tempC = Float.parseFloat(inp2);
+		}
+		catch(Exception e){
+			warnUser();
+			return 0;
+		}
 		return (   tempC*((float) 5 /9) +32 );
 	}
 }
