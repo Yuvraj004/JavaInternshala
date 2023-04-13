@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.connect4game.HelloController">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints maxWidth="298.0" minWidth="210.0" prefWidth="215.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <Pane GridPane.columnSpan="2" />
+    <Pane fx:id="insertedDiscsPane" prefHeight="437.0" prefWidth="202.0" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <VBox prefHeight="400.0" prefWidth="214.0" style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Pane prefHeight="371.0" prefWidth="242.0">
+            <TextField layoutX="47.0" layoutY="14.0" fx:id="playerOneTextField" />
+            <TextField layoutX="47.0" layoutY="48.0" fx:id="playerTwoTextField" />
+            <Button layoutX="47.0" layoutY="84.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Set Names" fx:id="setNamesButton" />
+            <Label fx:id="playerNameLabel" alignment="CENTER" layoutX="47.0" layoutY="126.0" prefHeight="17.0" prefWidth="149.0" text="Player One" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="24.0" />
+                </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="87.0" layoutY="170.0" prefHeight="17.0" prefWidth="69.0" text="Turn" textFill="WHITE">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            </Label>
+        </Pane>
+    </VBox>
+</GridPane>
